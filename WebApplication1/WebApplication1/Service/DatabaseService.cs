@@ -13,7 +13,7 @@ namespace WebApplication1.Service
             List<Models.Album> result = new List<Models.Album>();
 
             var connection = new System.Data.SqlClient.SqlConnection(@"
-Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\KUAS_WEB\20170106_kuas\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Work\Web\FinalProject\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
             connection.Open();
             var command = new System.Data.SqlClient.SqlCommand("", connection);
             command.CommandText = @"
@@ -38,7 +38,7 @@ Select * from Album";
         {
            Models.Album result = new Models.Album();
 
-            var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\KUAS_WEB\20170106_kuas\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
+            var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Work\Web\FinalProject\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
             connection.Open();
 
 
@@ -64,7 +64,7 @@ Where ID='{0}'", id);
         }
         public void CreateAlbum(Models.Album newAlbum)
         {
-            var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\KUAS_WEB\20170106_kuas\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
+            var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Work\Web\FinalProject\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
             connection.Open();
 
 
@@ -83,7 +83,7 @@ VALUES          ('{0}',{1},N'{2}',N'{3}',N'{4}')
 
         public void DeleteAlbum(string id)
         {
-            var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\KUAS_WEB\20170106_kuas\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
+            var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Work\Web\FinalProject\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
             connection.Open();
             var command = new System.Data.SqlClient.SqlCommand("", connection);
             command.CommandText = string.Format(@"
@@ -97,7 +97,7 @@ Where ID='{0}'
         }
         public void UpdateAlbum(Models.Album updateAlbum)
         {
-            var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\KUAS_WEB\20170106_kuas\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
+            var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Work\Web\FinalProject\WebApplication1\WebApplication1\App_Data\Database1.mdf;Integrated Security=True");
             connection.Open();
             var command = new System.Data.SqlClient.SqlCommand("", connection);
             command.CommandText = string.Format(@"
